@@ -17,23 +17,23 @@ Purchase Fully Received
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fpurchase--workflow-lightgray.png?logo=github
-    :target: https://github.com/OCA/purchase-workflow/tree/15.0/purchase_fully_received
+    :target: https://github.com/OCA/purchase-workflow/tree/16.0/purchase_fully_received
     :alt: OCA/purchase-workflow
 .. |badge4| image:: https://img.shields.io/badge/weblate-Translate%20me-F47D42.png
-    :target: https://translation.odoo-community.org/projects/purchase-workflow-15-0/purchase-workflow-15-0-purchase_fully_received
+    :target: https://translation.odoo-community.org/projects/purchase-workflow-16-0/purchase-workflow-16-0-purchase_fully_received
     :alt: Translate me on Weblate
 .. |badge5| image:: https://img.shields.io/badge/runboat-Try%20me-875A7B.png
-    :target: https://runboat.odoo-community.org/builds?repo=OCA/purchase-workflow&target_branch=15.0
+    :target: https://runboat.odoo-community.org/builds?repo=OCA/purchase-workflow&target_branch=16.0
     :alt: Try me on Runboat
 
 |badge1| |badge2| |badge3| |badge4| |badge5|
 
-The standard field is_shipped show information about the status
+The standard is_shipped field shows information about the status
 of the shipments and invoices related to a Purchase Order.
 
-However, it can be than the field is_shipped is marked as True when some of the shipments
-were cancelled. Because of this, this module introduce a new field that  will show
-that the Purchase Order is fully Shipped.
+However, it can happen that the field is_shipped is marked as True while some of the shipments
+were cancelled. Because of this, this module introduces a new field that will show
+wether a purchase order is fully shipped or not.
 
 **Table of contents**
 
@@ -51,7 +51,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/OCA/purchase-workflow/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/OCA/purchase-workflow/issues/new?body=module:%20purchase_fully_received%0Aversion:%2015.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/OCA/purchase-workflow/issues/new?body=module:%20purchase_fully_received%0Aversion:%2016.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -81,6 +81,6 @@ OCA, or the Odoo Community Association, is a nonprofit organization whose
 mission is to support the collaborative development of Odoo features and
 promote its widespread use.
 
-This module is part of the `OCA/purchase-workflow <https://github.com/OCA/purchase-workflow/tree/15.0/purchase_fully_received>`_ project on GitHub.
+This module is part of the `OCA/purchase-workflow <https://github.com/OCA/purchase-workflow/tree/16.0/purchase_fully_received>`_ project on GitHub.
 
 You are welcome to contribute. To learn how please visit https://odoo-community.org/page/Contribute.
