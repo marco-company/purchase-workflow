@@ -8,8 +8,9 @@ _STATES = [
     ("draft", "Draft"),
     ("to_approve", "To be approved"),
     ("approved", "Approved"),
-    ("rejected", "Rejected"),
+    ("in_progress", "In progress"),
     ("done", "Done"),
+    ("rejected", "Rejected"),
 ]
 
 
@@ -17,6 +18,7 @@ class PurchaseRequest(models.Model):
 
     _name = "purchase.request"
     _description = "Purchase Request"
+    _mail_post_access = "read"
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _order = "id desc"
 
@@ -48,7 +50,13 @@ class PurchaseRequest(models.Model):
     @api.depends("state")
     def _compute_is_editable(self):
         for rec in self:
-            if rec.state in ("to_approve", "approved", "rejected", "done"):
+            if rec.state in (
+                "to_approve",
+                "approved",
+                "rejected",
+                "in_progress",
+                "done",
+            ):
                 rec.is_editable = False
             else:
                 rec.is_editable = True
@@ -283,6 +291,9 @@ class PurchaseRequest(models.Model):
     def button_rejected(self):
         self.mapped("line_ids").do_cancel()
         return self.write({"state": "rejected"})
+
+    def button_in_progress(self):
+        return self.write({"state": "in_progress"})
 
     def button_done(self):
         return self.write({"state": "done"})
