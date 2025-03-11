@@ -14,7 +14,9 @@
         "security/security.xml",
         "views/purchase_request_type_view.xml",
         "views/purchase_request_view.xml",
-        "data/purchase_request_type.xml",
+    ],
+    "demo": [
+        "demo/purchase_request_type.xml",
     ],
     "maintainer": ["prapassornS"],
     "installable": True,
