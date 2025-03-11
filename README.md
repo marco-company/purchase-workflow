@@ -89,7 +89,7 @@ addon | version | maintainers | summary
 [purchase_request](purchase_request/) | 16.0.2.0.3 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_department](purchase_request_department/) | 16.0.1.0.0 |  | Purchase Request Department
 [purchase_request_exception](purchase_request_exception/) | 16.0.1.0.0 |  | Custom exceptions on purchase request
-[purchase_request_tier_validation](purchase_request_tier_validation/) | 16.0.1.0.0 |  | Extends the functionality of Purchase Requests to support a tier validation process.
+[purchase_request_tier_validation](purchase_request_tier_validation/) | 16.0.1.0.1 |  | Extends the functionality of Purchase Requests to support a tier validation process.
 [purchase_request_type](purchase_request_type/) | 16.0.1.0.0 |  | Purchase Request Type
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 16.0.1.0.1 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
 [purchase_return](purchase_return/) | 16.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Manage return orders.
