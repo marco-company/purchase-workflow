@@ -43,6 +43,7 @@ addon | version | maintainers | summary
 [purchase_force_invoiced](purchase_force_invoiced/) | 16.0.1.0.2 |  | Allows to force the billing status of the purchase order to "Invoiced"
 [purchase_force_invoiced_quantity](purchase_force_invoiced_quantity/) | 16.0.1.0.0 |  | Add manual invoice quantity in purchase order lines
 [purchase_invoice_method](purchase_invoice_method/) | 16.0.1.0.0 |  | Allow to force the invoice method of a purchase
+[purchase_invoice_new_picking_line](purchase_invoice_new_picking_line/) | 16.0.1.0.0 |  | When creating an invoice from a purchase order, this module also adds invoice lines for products that were in the order's pickings but not in the order itself.
 [purchase_invoice_plan](purchase_invoice_plan/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to purchases order, ability to manage future invoice plan
 [purchase_landed_cost](purchase_landed_cost/) | 16.0.1.0.2 |  | Purchase cost distribution
 [purchase_last_price_info](purchase_last_price_info/) | 16.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Purchase Product Last Price Info
