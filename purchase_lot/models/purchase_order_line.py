@@ -15,6 +15,7 @@ class PurchaseOrderLine(models.Model):
         copy=False,
         compute="_compute_lot_id",
         store=True,
+        readonly=False,
     )
 
     @api.depends("move_dest_ids.restrict_lot_id", "move_ids.restrict_lot_id")
