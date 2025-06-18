@@ -1,7 +1,3 @@
-.. image:: https://odoo-community.org/readme-banner-image
-   :target: https://odoo-community.org/get-involved?utm_source=readme
-   :alt: Odoo Community Association
-
 ================
 Purchase Request
 ================
@@ -17,7 +13,7 @@ Purchase Request
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/license-LGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/licence-LGPL--3-blue.png
     :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
     :alt: License: LGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fpurchase--workflow-lightgray.png?logo=github
@@ -121,15 +117,15 @@ Authors
 Contributors
 ------------
 
-- Jordi Ballester Alomar <jordi.ballester@forgeflow.com>
-- Jonathan Nemry <jonathan.nemry@acsone.eu>
-- Aaron Henriquez <ahenriquez@forgeflow.com>
-- Adrien Peiffer <adrien.peiffer@acsone.eu>
-- Lois Rilo <lois.rilo@forgeflow.com>
-- Héctor Villarreal <hector.villarreal@forgeflow.com>
-- Ben Cai <ben.cai@elico-corp.com>
-- Rattapong Chokmasermkul <rattapongc@ecosoft.co.th>
-- Stefan Rijnhart <stefan@opener.amsterdam>
+-  Jordi Ballester Alomar <jordi.ballester@forgeflow.com>
+-  Jonathan Nemry <jonathan.nemry@acsone.eu>
+-  Aaron Henriquez <ahenriquez@forgeflow.com>
+-  Adrien Peiffer <adrien.peiffer@acsone.eu>
+-  Lois Rilo <lois.rilo@forgeflow.com>
+-  Héctor Villarreal <hector.villarreal@forgeflow.com>
+-  Ben Cai <ben.cai@elico-corp.com>
+-  Rattapong Chokmasermkul <rattapongc@ecosoft.co.th>
+-  Stefan Rijnhart <stefan@opener.amsterdam>
 
 Other credits
 -------------
@@ -141,7 +137,7 @@ The development of this module has been financially supported by:
 Images
 ~~~~~~
 
-- Enric Tobella (logo)
+-  Enric Tobella (logo)
 
 .. |Aleph Objects, Inc| image:: https://upload.wikimedia.org/wikipedia/en/3/3b/Aleph_Objects_Logo.png
    :target: https://www.alephobjects.com
