@@ -703,11 +703,6 @@ msgid "Order Reference"
 msgstr ""
 
 #. module: purchase_request
-#: model:mail.message.subtype,name:purchase_request.mt_request_po_confirmed
-msgid "Order confirmation"
-msgstr ""
-
-#. module: purchase_request
 #. odoo-python
 #: code:addons/purchase_request/models/purchase_order.py:0
 #, python-format
@@ -821,6 +816,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:purchase_request.purchase_request_line_form
 #: model_terms:ir.ui.view,arch_db:purchase_request.view_purchase_request_line_details
 msgid "Purchase Order Lines"
+msgstr ""
+
+#. module: purchase_request
+#: model:mail.message.subtype,name:purchase_request.mt_request_po_confirmed
+msgid "Purchase Order confirmation"
 msgstr ""
 
 #. module: purchase_request
@@ -967,6 +967,11 @@ msgid "Purchase Status"
 msgstr ""
 
 #. module: purchase_request
+#: model:mail.message.subtype,name:purchase_request.mt_request_picking_done
+msgid "Purchase receipt confirmation"
+msgstr ""
+
+#. module: purchase_request
 #: model:ir.model.fields,field_description:purchase_request.field_purchase_request__purchase_count
 msgid "Purchases count"
 msgstr ""
@@ -1040,11 +1045,6 @@ msgstr ""
 #. module: purchase_request
 #: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__purchased_qty
 msgid "RFQ/PO Qty"
-msgstr ""
-
-#. module: purchase_request
-#: model:mail.message.subtype,name:purchase_request.mt_request_picking_done
-msgid "Receipt confirmation"
 msgstr ""
 
 #. module: purchase_request
