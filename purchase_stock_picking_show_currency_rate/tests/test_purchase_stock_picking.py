@@ -4,7 +4,7 @@ from odoo import fields
 from odoo.tests import Form, common
 
 
-class TestPurchaseStockPicking(common.SavepointCase):
+class TestPurchaseStockPicking(common.TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
@@ -54,7 +54,7 @@ class TestPurchaseStockPicking(common.SavepointCase):
         self.assertEqual(picking.currency_rate_amount, 1.0)
         picking.move_ids_without_package.quantity_done = 1
         picking.button_validate()
-        self.assertEqual(picking.move_lines.stock_valuation_layer_ids.unit_cost, 10)
+        self.assertEqual(picking.move_ids.stock_valuation_layer_ids.unit_cost, 10)
 
     def test_02_purchase_currency_extra(self):
         purchase = self._create_purchase_order(self.currency_extra)
@@ -63,4 +63,4 @@ class TestPurchaseStockPicking(common.SavepointCase):
         self.assertEqual(picking.currency_rate_amount, 2.0)
         picking.move_ids_without_package.quantity_done = 1
         picking.button_validate()
-        self.assertEqual(picking.move_lines.stock_valuation_layer_ids.unit_cost, 5)
+        self.assertEqual(picking.move_ids.stock_valuation_layer_ids.unit_cost, 5)
