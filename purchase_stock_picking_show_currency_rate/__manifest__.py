@@ -11,5 +11,8 @@
     "installable": True,
     "depends": ["purchase_stock"],
     "maintainers": ["victoralmau"],
-    "data": ["views/stock_picking_view.xml"],
+    "data": [
+        "views/res_config_settings_views.xml",
+        "views/stock_picking_view.xml",
+    ],
 }

@@ -32,8 +32,19 @@ class StockPicking(models.Model):
     @api.depends("purchase_currency_id", "show_currency_rate_amount", "company_id")
     def _compute_currency_rate_amount(self):
         self.currency_rate_amount = 1
+        inverse = self.env.company.picking_rate_display_type == "inverse_rate"
         for item in self.filtered("show_currency_rate_amount"):
             rates = item.purchase_currency_id._get_rates(
-                item.company_id, fields.Date.context_today(self)
+                item.company_id,
+                item.purchase_id.date_approve or fields.Date.context_today(self),
             )
-            item.currency_rate_amount = rates.get(item.purchase_currency_id.id)
+            item.currency_rate_amount = (
+                rates.get(item.purchase_currency_id.id)
+                if not inverse
+                else item.purchase_currency_id._convert(
+                    1.0,
+                    item.company_id.currency_id,
+                    item.company_id,
+                    item.purchase_id.date_approve or fields.Date.context_today(self),
+                )
+            )

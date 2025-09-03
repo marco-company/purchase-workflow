@@ -48,6 +48,11 @@ Rates for non-company currencies must be available and be distinct to 1.0. For e
 #. Go to Rates smart-button
 #. Update 01/01/2010 record and change rate to 1.5
 
+To change the currency rate display style on pickings:
+
+- Go to Accounting (or Invoicing) → Configuration → Settings.
+- In the Picking Rate Display Type section, select the default display type for all currencies.
+
 Usage
 =====
 
@@ -86,6 +91,10 @@ Contributors
 
   * Pedro M. Baeza
   * Víctor Martínez
+
+* `Quartle <https://www.quartile.co>`_:
+
+  * Aung Ko Ko Lin
 
 Maintainers
 ~~~~~~~~~~~

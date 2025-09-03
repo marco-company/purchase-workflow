@@ -64,3 +64,13 @@ class TestPurchaseStockPicking(common.TransactionCase):
         picking.move_ids_without_package.quantity_done = 1
         picking.button_validate()
         self.assertEqual(picking.move_ids.stock_valuation_layer_ids.unit_cost, 5)
+
+    def test_02_purchase_currency_extra_inverse_rate(self):
+        self.env.company.picking_rate_display_type = "inverse_rate"
+        purchase = self._create_purchase_order(self.currency_extra)
+        picking = purchase.picking_ids[0]
+        self.assertEqual(picking.purchase_currency_id, self.currency_extra)
+        self.assertEqual(picking.currency_rate_amount, 0.5)
+        picking.move_ids_without_package.quantity_done = 1
+        picking.button_validate()
+        self.assertEqual(picking.move_ids.stock_valuation_layer_ids.unit_cost, 5)
