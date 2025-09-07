@@ -1,5 +1,6 @@
 # Copyright 2021 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl)
+
 from odoo import fields
 from odoo.tests import Form, common
 
@@ -65,7 +66,7 @@ class TestPurchaseStockPicking(common.TransactionCase):
         picking.button_validate()
         self.assertEqual(picking.move_ids.stock_valuation_layer_ids.unit_cost, 5)
 
-    def test_02_purchase_currency_extra_inverse_rate(self):
+    def test_03_purchase_currency_extra_inverse_rate(self):
         self.env.company.picking_rate_display_type = "inverse_rate"
         purchase = self._create_purchase_order(self.currency_extra)
         picking = purchase.picking_ids[0]

@@ -48,10 +48,9 @@ Rates for non-company currencies must be available and be distinct to 1.0. For e
 #. Go to Rates smart-button
 #. Update 01/01/2010 record and change rate to 1.5
 
-To change the currency rate display style on pickings:
+To configure how exchange rates are displayed on stock pickings:
 
-- Go to Accounting (or Invoicing) → Configuration → Settings.
-- In the Picking Rate Display Type section, select the default display type for all currencies.
+#. In the Picking Rate Display Type section, select the default display type.
 
 Usage
 =====
@@ -65,6 +64,12 @@ To use this module, you need to:
 #. Confirm Order.
 #. Go to Receipt.
 #. The account rate should be shown according to the currency defined previously.
+
+Known issues / Roadmap
+======================
+
+This module and [account_invoice_show_currency_rate](https://github.com/OCA/account-invoicing/tree/16.0/account_invoice_show_currency_rate) share the same field definition.
+In a future migration, we should create a mixin to  share it across these two modules.
 
 Bug Tracker
 ===========

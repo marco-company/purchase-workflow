@@ -11,6 +11,7 @@ License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
             <field name="origin" position="after">
                 <field name="purchase_id" invisible="1" />
                 <field name="show_currency_rate_amount" invisible="1" />
+                <field name="rate_at_done" digits="[12,12]" invisible="1" />
                 <div class="o_td_label">
                     <field
                         name="purchase_currency_id"
