@@ -57,6 +57,7 @@ setuptools.setup(
         'odoo-addon-purchase_order_duplicate_check>=16.0dev,<16.1dev',
         'odoo-addon-purchase_order_general_discount>=16.0dev,<16.1dev',
         'odoo-addon-purchase_order_hide_receipt_status>=16.0dev,<16.1dev',
+        'odoo-addon-purchase_order_line_deep_sort>=16.0dev,<16.1dev',
         'odoo-addon-purchase_order_line_menu>=16.0dev,<16.1dev',
         'odoo-addon-purchase_order_line_receipt_status>=16.0dev,<16.1dev',
         'odoo-addon-purchase_order_line_sequence>=16.0dev,<16.1dev',
